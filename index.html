@@ -5,65 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div>
-        <header>
-            <p>Header Logo</p>
-            <a href="">header link one</a>
-            <a href="">header link two</a>
-            <a href="">header link three</a>
+    <div class="blue">
+        <header class="thin flex-container flex-end">
+            <p id="logo" class="primary">Header Logo</p>
+            <a class="secondary" href="">header link one</a>
+            <a class="secondary" href="">header link two</a>
+            <a class="secondary" href="">header link three</a>
         </header>
-        <div class="flexbox-container">
+        <div class="thin flex-container">
             <div>
-                <p>This website is awesome</p>
-                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-                <button type="button">Sign up</button>
+                <p class="primary">This website is awesome</p>
+                <p class="secondary">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                <button class="button azure" type="button">Sign up</button>
             </div>
             <img class="rectangle-img" src="./images/grey-rectangle-placeholder.png">
         </div>
     </div>
 
-    <div>
-        <p>Some random information.</p>
-        <div class="flexbox-container">
-            <div>
-                <img class="square-img" src="./images/white-square-placeholder.png">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div>
-                <img class="square-img" src="./images/white-square-placeholder.png">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div>
-                <img class="square-img" src="./images/white-square-placeholder.png">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div>
-                <img class="square-img" src="./images/white-square-placeholder.png">
-                <p>this is some subtext under an illustration or image</p>
+    <div class="inside">
+        <div class="thinner">
+            <p class="info">Some random information.</p>
+            <div class="flex-container flex-between">
+                <div class="margin">
+                    <img class="square-img" src="./images/white-square-placeholder.png">
+                    <p class="subtext">this is some subtext under an illustration or image</p>
+                </div>
+                <div class="margin">
+                    <img class="square-img" src="./images/white-square-placeholder.png">
+                    <p class="subtext">this is some subtext under an illustration or image</p>
+                </div>
+                <div class="margin">
+                    <img class="square-img" src="./images/white-square-placeholder.png">
+                    <p class="subtext">this is some subtext under an illustration or image</p>
+                </div>
+                <div class="margin">
+                    <img class="square-img" src="./images/white-square-placeholder.png">
+                    <p class="subtext">this is some subtext under an illustration or image</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div>
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</p>
-        <p>-Thor, God of Thunder</p>
+    <div class="quote-section inside">
+        <div class="thinner">
+            <p class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</p>
+            <p class="quoter">-Thor, God of Thunder</p>
+        </div>
     </div>
 
-    <div>
-        <div>
+    <div class="inside">
+        <div class="azure thin flex-container flex-evenly">
             <div>
                 <p>Call to action! It's time!</p>
                 <p>Sign up for our product by clicking that button right over there!</p>
             </div>
             <div>
-                <button type="button">Sign up</button>
+                <button class="button azure white-border" type="button">Sign up</button>
             </div>
         </div>
     </div>
 
-    <footer>
+    <footer class="blue secondary">
         <p>Copyright © The Odin Project 2021</p>
     </footer>
 </body>

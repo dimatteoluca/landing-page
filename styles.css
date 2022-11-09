@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+    margin: 0 !important;
+}
+
+div {
+    text-align: center;
+}
+
+p {
+    margin: 0 !important;
+}
+
+#logo {
+    font-size: 24px;
+    flex: 1;
+    text-align: start;
+}
+
+header a {
+    margin: 0 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+.inside {
+    padding: 130px 0;
+}
+
+.thin {
+    max-width: 60vmax;
+    min-width: 85vmin;
+    margin: auto;
+}
+
+.thinner {
+    max-width: 46vmax;
+    min-width: 85vmin;
+    margin: auto;
+}
+
+.margin {
+    margin: 15px;
+}
+
+.blue {
+    background-color: #1f2937;
+}
+
+.primary {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.button {
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight:lighter;
+    font-style: italic;
+    color: #1f2937;
+    text-align: start;
+}
+
+.quoter {
+    font-weight: bolder;
+    text-align: end;
+}
+
+.azure {
+    background-color: #3882f6;
+    color: white;
+}
+
+.white-border {
+    border-style: solid;
+    border-color: white;
+}
+
+.rectangle-img {
+    max-width: 35vmax;
+    height: auto;
+}
+
+.square-img {
+    width: 160px;
+    height: auto;
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.subtext {
+    width: 150px;
+    height: auto;
+    margin-bottom: 50px !important;
+}
