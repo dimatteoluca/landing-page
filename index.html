@@ -8,40 +8,43 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="blue">
-        <header class="thin flex-container flex-end">
-            <p id="logo" class="primary">Header Logo</p>
+    <div class="blue external">
+        <header class="blue thin flexbox flex-end">
+            <p id="logo" class="flex-item">Header Logo</p>
             <a class="secondary" href="">header link one</a>
             <a class="secondary" href="">header link two</a>
             <a class="secondary" href="">header link three</a>
         </header>
-        <div class="thin flex-container">
-            <div>
+    </div>
+
+    <div class="blue internal">
+        <div class="thin flexbox">
+            <div class="flex-item">
                 <p class="primary">This website is awesome</p>
                 <p class="secondary">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
                 <button class="button azure" type="button">Sign up</button>
             </div>
-            <img class="rectangle-img" src="./images/grey-rectangle-placeholder.png">
+            <img class="rectangle-img flex-item" src="./images/grey-rectangle-placeholder.png">
         </div>
     </div>
 
-    <div class="inside">
-        <div class="thinner">
+    <div class="internal">
+        <div class="thinner text-center">
             <p class="info">Some random information.</p>
-            <div class="flex-container flex-between">
-                <div class="margin">
+            <div class="flexbox flex-between">
+                <div class="flex-item margin-15">
+                    <img class="flex-item square-img" src="./images/white-square-placeholder.png">
+                    <p class="subtext">this is some subtext under an illustration or image</p>
+                </div>
+                <div class="flex-item margin-15">
                     <img class="square-img" src="./images/white-square-placeholder.png">
                     <p class="subtext">this is some subtext under an illustration or image</p>
                 </div>
-                <div class="margin">
+                <div class="flex-item margin-15">
                     <img class="square-img" src="./images/white-square-placeholder.png">
                     <p class="subtext">this is some subtext under an illustration or image</p>
                 </div>
-                <div class="margin">
-                    <img class="square-img" src="./images/white-square-placeholder.png">
-                    <p class="subtext">this is some subtext under an illustration or image</p>
-                </div>
-                <div class="margin">
+                <div class="flex-item margin-15">
                     <img class="square-img" src="./images/white-square-placeholder.png">
                     <p class="subtext">this is some subtext under an illustration or image</p>
                 </div>
@@ -49,17 +52,17 @@
         </div>
     </div>
 
-    <div class="quote-section inside">
+    <div class="quote-section internal">
         <div class="thinner">
             <p class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</p>
             <p class="quoter">-Thor, God of Thunder</p>
         </div>
     </div>
 
-    <div class="inside">
-        <div class="azure thin flex-container flex-evenly">
+    <div class="internal">
+        <div class="azure thin call-to-action flexbox flex-evenly">
             <div>
-                <p>Call to action! It's time!</p>
+                <p class="bold">Call to action! It's time!</p>
                 <p>Sign up for our product by clicking that button right over there!</p>
             </div>
             <div>
@@ -68,7 +71,7 @@
         </div>
     </div>
 
-    <footer class="blue secondary">
+    <footer class="blue external secondary text-center">
         <p>Copyright © The Odin Project 2021</p>
     </footer>
 </body>

@@ -3,43 +3,65 @@ body {
     margin: 0 !important;
 }
 
-div {
-    text-align: center;
-}
-
 p {
     margin: 0 !important;
 }
 
+header a {
+    margin-left: 20px;
+}
+
+header a:link {
+    text-decoration: none;
+}
+
+header a:visited {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+header a:active {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
 #logo {
     font-size: 24px;
-    flex: 1;
+    font-weight: bold;
+    color: #f9faf8;
     text-align: start;
 }
 
-header a {
-    margin: 0 10px;
+.internal {
+    padding: 130px 0;
 }
 
-a:link {
-    text-decoration: none;
+.external {
+    padding: 25px 0;
 }
 
-a:visited {
-    text-decoration: none;
+.thin {
+    max-width: 62vmax;
+    min-width: 85vmin;
+    margin: auto;
 }
 
-a:hover {
-    text-decoration: none;
+.thinner {
+    max-width: 50vmax;
+    min-width: 85vmin;
+    margin: auto;
 }
 
-a:active {
-    text-decoration: none;
-}
-
-.flex-container {
+.flexbox {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .flex-between {
@@ -54,34 +76,27 @@ a:active {
     justify-content: end;
 }
 
-.inside {
-    padding: 130px 0;
+.flex-item {
+    flex: 1;
 }
 
-.thin {
-    max-width: 60vmax;
-    min-width: 85vmin;
-    margin: auto;
+.text-center {
+    text-align: center;
 }
 
-.thinner {
-    max-width: 46vmax;
-    min-width: 85vmin;
-    margin: auto;
-}
-
-.margin {
+.margin-15 {
     margin: 15px;
 }
 
-.blue {
-    background-color: #1f2937;
+.bold {
+    font-weight: bold;
 }
 
 .primary {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    margin-top: -30px !important;
 }
 
 .secondary {
@@ -89,16 +104,20 @@ a:active {
     color: #e5e7eb;
 }
 
-.button {
-    border-radius: 5px;
-    padding: 5px 15px;
-    font-weight: bold;
+.blue {
+    background-color: #1f2937;
+}
+
+.azure {
+    background-color: #3882f6;
+    color: white;
 }
 
 .info {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    margin-top: -80px !important;
 }
 
 .quote-section {
@@ -118,9 +137,18 @@ a:active {
     text-align: end;
 }
 
-.azure {
-    background-color: #3882f6;
-    color: white;
+.call-to-action {
+    font-size: 20px;
+    padding: 45px 0;
+    border-radius: 7px;
+}
+
+.button {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    font-weight: bold;
+    margin: 8px 0;
 }
 
 .white-border {
@@ -131,6 +159,7 @@ a:active {
 .rectangle-img {
     max-width: 35vmax;
     height: auto;
+    margin: 0 10px;
 }
 
 .square-img {
@@ -145,5 +174,5 @@ a:active {
 .subtext {
     width: 150px;
     height: auto;
-    margin-bottom: 50px !important;
+    margin: auto !important;
 }
