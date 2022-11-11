@@ -149,11 +149,12 @@ button {
     padding: 8px 25px;
     font-weight: bold;
     margin: 8px 0;
+    border-style: none;
 }
 
 .white-border {
-    border-style: solid;
-    border-color: white;
+    border-style: solid !important;
+    border-color: white !important;
 }
 
 .rectangle-img {
