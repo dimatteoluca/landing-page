@@ -27,8 +27,13 @@ header a:active {
     text-decoration: none;
 }
 
+.hide-on-small {
+    display: none;
+}
+
 button {
     cursor: pointer;
+    align-self: start;
 }
 
 #logo {
@@ -62,6 +67,10 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .flex-between {
@@ -157,15 +166,20 @@ button {
     border-color: white !important;
 }
 
+.first {
+    gap: 40px
+}
+
 .rectangle-img {
-    max-width: 35vmax;
+    max-width: 33vmax;
+    min-width: 80vmin;
     height: auto;
-    margin: 0 10px;
+    margin: auto;
 }
 
 .square-img {
+    aspect-ratio: 1/1;
     width: 160px;
-    height: auto;
     border-style: solid;
     border-color: #3882f6;
     border-radius: 15px;
@@ -173,7 +187,75 @@ button {
 }
 
 .subtext {
-    width: 150px;
+    width: 170px;
     height: auto;
     margin: auto !important;
+}
+
+@media screen and (max-width: 560px) {
+    button {
+        align-self: center;
+    }
+
+    header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        align-items: center;
+    }
+
+    header a {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .hide-on-full {
+        display: none;
+    }
+
+    .hide-on-small {
+        display: inline;
+    }
+
+    label img {
+        aspect-ratio: 1/1;
+        width: 35px;
+
+    }
+
+    .thin {
+        width: auto !important;
+        margin: auto !important;
+        max-width: none !important;
+        min-width: none !important;
+    }
+
+    .quote {
+        font-size: 26px;
+    }
+
+    .quoter {
+        font-size: 14px;
+    }
+
+    .internal {
+        /* padding-left: 7vw;
+        padding-right: 7vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh; */
+        padding: 10vh 6vw;
+    }
+
+    .info {
+        margin-top: -5vh !important;
+    }
+
+    .call-to-action {
+        font-size: 18px;
+        text-align: center;
+        gap: 4vw;
+    }
+
+    .call-to-action p {
+        padding: 0 5vw;
+    }
 }
